@@ -1,0 +1,161 @@
+[
+  {
+    "name": "מנות ראשונות",
+    "position": 1,
+    "items": [
+      {
+        "name": "כנפיים",
+        "position": 1,
+        "description": "6 יחידות כנפיים ברוטב צ'ילי",
+        "ingredients": [
+          {
+            "name": "כנפיים"
+          },
+          {
+            "name": "רוטב צ'ילי"
+          },
+          {
+            "name": "בצל",
+            "optional": true
+          },
+          {
+            "name": "פטרוזיליה",
+            "optional": true
+          }
+        ],
+        "price": 35.5
+      },
+      {
+        "name": "סיגר פטה כבד עוף",
+        "position": 3,
+        "description": "עלי סיגר ממולא בכבד עוף טרי קצוץ",
+        "ingredients": [
+          {
+            "name": "עלי סיגר ממולא בכבד עוף"
+          },
+          {
+            "name": "רוטב צ'ילי"
+          },
+          {
+            "name": "פטרוזיליה",
+            "optional": true
+          }
+        ],
+        "price": 40
+      },
+      {
+        "name": "סלט חזה עוף",
+        "position": 2,
+        "description": "נתחי חזה עוף טרי בליווי מגוון ירקות העונה",
+        "ingredients": [
+          {
+            "name": "נתחי חזה עוף",
+            "optional": true
+          },
+          {
+            "name": "עגבניות",
+            "optional": true
+          },
+          {
+            "name": "בצל",
+            "optional": true
+          },
+          {
+            "name": "עגבניות",
+            "optional": true
+          },
+          {
+            "name": "חסה",
+            "optional": true
+          }
+        ],
+        "price": 49
+      }
+    ]
+  },
+
+  {
+    "name": "מנות עיקריות",
+    "position": 2,
+    "items": [
+      {
+        "name": "מיקס יקיטורי",
+        "position": 1,
+        "description": "שיפודוני עץ פרגית, קבב הבית, פילה בקר, אנטריקוט ומולארד",
+        "ingredients": [
+          {
+            "name": "פרגית",
+            "optional": true
+          },
+          {
+            "name": "קבב הבית",
+            "optional": true
+          },
+          {
+            "name": "פילה בקר",
+            "optional": true
+          },
+          {
+            "name": "אנטריקוט",
+            "optional": true
+          },
+          {
+            "name": "מולארד",
+            "optional": true
+          }
+        ],
+        "price": 140
+      },
+      {
+        "name": "מניפת אנטריקוט",
+        "position": 2,
+        "description": "פרוסות דקות של אנטריקוט עסיסי (מומלץ)",
+        "price": 110
+      },
+      {
+        "name": "המבורגר אנטריקוט 250 גרם",
+        "position": 1,
+        "description": "(אפשרות לתוספת מדליון כבד אווז 35 ש\"ח / ביצת עין 12 ש\"ח / פורטובלו 10 ש\"ח / מניפה 22 ש\"ח)",
+        "ingredients": [
+          {
+            "name": "לחמנייה"
+          },
+          {
+            "name": "המבורגר"
+          },
+          {
+            "name": "בצל",
+            "optional": true
+          },
+          {
+            "name": "עגבניות",
+            "optional": true
+          },
+          {
+            "name": "חסה",
+            "optional": true
+          }
+        ],
+        "extras": [
+          {
+            "name": "מדליון כבד אווז",
+            "price": 35
+          },
+          {
+            "name": "בית עין",
+            "price": 12
+          },
+          {
+            "name": "פורטובלו",
+            "price": 10
+          },
+          {
+            "name": "מניפה",
+            "price": 22
+          }
+        ],
+        "price": 58
+      }
+    ]
+  }
+]
