@@ -1,11 +1,11 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import PropTypes from 'prop-types'
-import {withStyles, MuiThemeProvider, createMuiTheme} from '@material-ui/core/styles';
+import {createMuiTheme, withStyles} from '@material-ui/core/styles';
 import green from '@material-ui/core/colors/green';
 import Tooltip from "@material-ui/core/Tooltip";
 import Button from "@material-ui/core/Button";
-import {AddCircleOutlineIcon} from "@material-ui/icons";
+import {AddCircleOutlined} from "@material-ui/icons";
 
 class Menu extends Component {
     constructor(props) {
@@ -52,7 +52,7 @@ class Menu extends Component {
                                         <td>
                                             <Tooltip title="add">
                                                 <Button variant="contained" color="primary" className={classes.button} onClick={() => this.changeActivity('solve')}>
-                                                    <AddCircleOutlineIcon />
+                                                    <AddCircleOutlined />
                                                 </Button>
                                             </Tooltip>
                                         </td>
