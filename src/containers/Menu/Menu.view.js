@@ -3,6 +3,9 @@ import {connect} from 'react-redux'
 import PropTypes from 'prop-types'
 import {withStyles, MuiThemeProvider, createMuiTheme} from '@material-ui/core/styles';
 import green from '@material-ui/core/colors/green';
+import Tooltip from "@material-ui/core/Tooltip";
+import Button from "@material-ui/core/Button";
+import {AddCircleOutlineIcon} from "@material-ui/icons";
 
 class Menu extends Component {
     constructor(props) {
@@ -46,6 +49,13 @@ class Menu extends Component {
                                     <tr key={"tr-" + j + "-" + i}>
                                         <td>{`${food.price}`}</td>
                                         <td>{`${food.name} - ${food.description}`}</td>
+                                        <td>
+                                            <Tooltip title="add">
+                                                <Button variant="contained" color="primary" className={classes.button} onClick={() => this.changeActivity('solve')}>
+                                                    <AddCircleOutlineIcon />
+                                                </Button>
+                                            </Tooltip>
+                                        </td>
                                     </ tr>
                                 ))}
                                 </tbody>

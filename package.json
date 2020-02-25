@@ -1,10 +1,10 @@
 {
-  "name": "tic-tac-toe",
+  "name": "quick-meal",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "^3.9.3",
-    "@material-ui/icons": "^3.0.2",
+    "@material-ui/core": "latest",
+    "@material-ui/icons": "latest",
     "@reach/dialog": "^0.2.3",
     "prop-types": "^15.7.2",
     "react": "^16.6.3",
