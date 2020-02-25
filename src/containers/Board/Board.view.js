@@ -158,7 +158,6 @@ class Board extends Component {
                         {this.state.allDone && !anyErrors &&
                         <h1>WOOOOW Well done!!</h1>
                         }
-                        &copy; Uda &#128515;
                     </span>
 
                 </div>

@@ -22,25 +22,48 @@
     padding: 15px;
 }
 
-.game-container {
-    width: 100%;
+.menu-category {
+    margin-top: 40px;
 }
 
-.game-grid {
+.menu-category h2{
+    margin-bottom: 25px;
+}
+
+
+.menu-container {
+    width: 100%;
+    padding-bottom: 1000px;
+    background: url("./assets/menu.jpg") no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #ffffff;
+    padding-top: 24%;
+}
+
+.menu-grid {
     height: 30%;
-    width: 30%;
+    width: 50%;
     margin: auto;
 }
 
-.game-grid td {
+.menu-grid td {
     cursor: pointer;
     overflow: hidden;
     padding: 0px;
     height: 40px;
-    width: 25px;
     font-size: 20px;
     font-weight: 600;
-    color: #616161;
+}
+
+.menu-grid td:first-child {
+    width: 10%;
+}
+
+.menu-grid td:last-child {
+    width: 90%;
 }
 
 /* X */

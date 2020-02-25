@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Board from '../Board/Board.view'
+import Menu from '../Menu/Menu.view'
 import {connect} from 'react-redux'
 
 class Main extends Component {
@@ -12,7 +12,7 @@ class Main extends Component {
         return (
             <div>
                 <p /><p /><p /><p /><p /><p />
-                <Board foods={this.foods}/>
+                <Menu foods={this.foods}/>
             </div>
         );
     }
