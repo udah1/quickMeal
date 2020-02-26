@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
-import {withStyles} from '@material-ui/core/styles';
 import CartItem from './CartItem.view'
 
 
@@ -19,7 +18,7 @@ class Cart extends Component {
                         <ul className="cartWrap">
                             <span>
                              {items.map((item, index) =>
-                                 (<CartItem product={item} index={index}/>)
+                                 (<CartItem product={item} key={index}/>)
                              )}
                             </span>
                         </ul>
@@ -40,4 +39,4 @@ function mapStateToProps(state) {
 }
 
 
-export default withStyles()(connect(mapStateToProps, mapDispatchToProps)(Cart))
+export default connect(mapStateToProps, mapDispatchToProps)(Cart)

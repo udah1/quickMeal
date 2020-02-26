@@ -2,7 +2,6 @@ import React from 'react';
 import {Button, withStyles} from "@material-ui/core";
 import {connect} from "react-redux";
 import DeleteIcon from '@material-ui/icons/Delete';
-import {AddCircleOutline} from "@material-ui/icons";
 class CartItem extends React.Component {
 
     constructor(props) {
@@ -47,4 +46,4 @@ function mapStateToProps(state) {
 }
 
 
-export default withStyles()(connect(mapStateToProps, mapDispatchToProps)(CartItem))
+export default connect(mapStateToProps, mapDispatchToProps)(CartItem)
