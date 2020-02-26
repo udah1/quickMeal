@@ -224,9 +224,8 @@ $fontSerif : 'Droid Serif', serif;
             }
             .cartSection {
                 display: table-cell;
-
                 vertical-align: middle;
-
+                text-align: right;
 
                 .itemNumber {
                     font-size: .75em;
@@ -256,11 +255,6 @@ $fontSerif : 'Droid Serif', serif;
                     }
 
                 }
-                .itemImg {
-                    width: 4em;
-
-                    float: left;
-                }
                 &.qtyWrap , &.prodTotal {
                     text-align: center;
                     p {
@@ -269,11 +263,12 @@ $fontSerif : 'Droid Serif', serif;
                     }
 
                 }
-
                 .itemImg {
                     width: 8em;
+                    float: right;
                     display: inline;
                     padding-right: 1em;
+                    padding-left: 1em;
                 }
 
 

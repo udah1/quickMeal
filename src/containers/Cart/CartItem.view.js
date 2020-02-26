@@ -1,7 +1,8 @@
 import React from 'react';
-import {withStyles} from "@material-ui/core";
+import {Button, withStyles} from "@material-ui/core";
 import {connect} from "react-redux";
-
+import DeleteIcon from '@material-ui/icons/Delete';
+import {AddCircleOutline} from "@material-ui/icons";
 class CartItem extends React.Component {
 
     constructor(props) {
@@ -17,18 +18,19 @@ class CartItem extends React.Component {
         return (
             <li className={`items ${evenClass}`}>
                 <div className="infoWrap">
-                    <div className="cartSection">
-                        <img src="http://lorempixel.com/output/technics-q-c-300-300-4.jpg" alt="" className="itemImg"/>
-                        <h3>{product.name}</h3>
-
-                        <p> {product.description}</p>
-                    </div>
-
                     <div className="prodTotal cartSection">
                         <p>&#8362;{product.price}</p>
                     </div>
                     <div className="cartSection removeWrap">
-                        <a href="#" className="remove">x</a>
+                        <Button onClick={() => alert('יא בישגדה מה אתה לוחץ????')}>
+                            <DeleteIcon />
+                        </Button>
+                    </div>
+                    <div className="cartSection">
+                        <img src="https://www.learnenglish1-2-1.com/wp-content/uploads/2018/11/20-Ways-to-say-Hello-in-Other-Languages.jpeg" alt="" className="itemImg"/>
+                        <h3>{product.name}</h3>
+
+                        <p> {product.description}</p>
                     </div>
                 </div>
             </li>
