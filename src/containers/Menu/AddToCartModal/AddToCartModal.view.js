@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import {Modal, ModalBody, ModalFooter, ModalHeader} from 'reactstrap';
 import {Button, Checkbox, FormControlLabel} from "@material-ui/core";
+import {addItemToCart} from '../../Cart/Cart.actions'
 
 class AddToCartModal extends Component {
 
@@ -13,7 +14,7 @@ class AddToCartModal extends Component {
     }
 
     render() {
-        const {item, close} = this.props;
+        const {item, close, addToCart} = this.props;
         return item ? (
             <Modal isOpen={true} toggle={close}>
                 <ModalHeader>{item.name}</ModalHeader>
@@ -43,7 +44,7 @@ class AddToCartModal extends Component {
                     </div>
                 </ModalBody>
                 <ModalFooter>
-                    <Button color="primary" onClick={() => close(item)}>Do Something</Button>{'  '}
+                    <Button color="primary" onClick={() => addToCart(item)}>Do Something</Button>{'  '}
                     <Button color="secondary" onClick={close}>Cancel</Button>
                 </ModalFooter>
             </Modal>
@@ -53,7 +54,7 @@ class AddToCartModal extends Component {
 
 function mapDispatchToProps(dispatch, ownProps) {
     return {
-        //addToCart = (item) => dispatch()
+        addToCart: item => dispatch(addItemToCart(item))
     }
 }
 
