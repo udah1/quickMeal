@@ -47,8 +47,8 @@ class AddToCartModal extends Component {
                     <Button color="primary" onClick={() => {
                         addToCart(item);
                         close();
-                    }}>Do Something</Button>{'  '}
-                    <Button color="secondary" onClick={close}>Cancel</Button>
+                    }}>הוסף להזמנה</Button>{'  '}
+                    <Button color="secondary" onClick={close}>סגור</Button>
                 </ModalFooter>
             </Modal>
         ) : null;
