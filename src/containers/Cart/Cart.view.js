@@ -6,7 +6,7 @@ import CartItem from './CartItem.view'
 class Cart extends Component {
 
     render() {
-        const {items} = this.props;
+        const {items, totalPrice} = this.props;
         return (
             <div className="shopping-cart">
                 <div className="wrap cf">
@@ -22,6 +22,7 @@ class Cart extends Component {
                              )}
                             </span>
                         </ul>
+                        total : {totalPrice}
                     </div>
                 </div>
             </div>
