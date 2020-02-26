@@ -1,7 +1,8 @@
 import React from 'react';
-import {Button, withStyles} from "@material-ui/core";
+import {Button} from "@material-ui/core";
 import {connect} from "react-redux";
 import DeleteIcon from '@material-ui/icons/Delete';
+import {removeItemFromCart} from "./Cart.actions";
 class CartItem extends React.Component {
 
     constructor(props) {
@@ -12,7 +13,7 @@ class CartItem extends React.Component {
     }
 
     render() {
-        const {product, index} = this.props;
+        const {product, index, removeItem} = this.props;
         const evenClass = index%2 === 0 ? 'even' : 'odd'
         return (
             <li className={`items ${evenClass}`}>
@@ -21,7 +22,7 @@ class CartItem extends React.Component {
                         <p>&#8362;{product.price}</p>
                     </div>
                     <div className="cartSection removeWrap">
-                        <Button onClick={() => alert('יא בישגדה מה אתה לוחץ????')}>
+                        <Button onClick={() => removeItem(product.id)}>
                             <DeleteIcon />
                         </Button>
                     </div>
@@ -38,7 +39,9 @@ class CartItem extends React.Component {
 }
 
 function mapDispatchToProps(dispatch) {
-    return {}
+    return {
+        removeItem: id => dispatch(removeItemFromCart(id))
+    }
 }
 
 function mapStateToProps(state) {
