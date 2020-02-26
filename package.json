@@ -6,6 +6,7 @@
     "@material-ui/core": "latest",
     "@material-ui/icons": "latest",
     "@reach/dialog": "^0.2.3",
+    "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
     "react": "^16.6.3",
     "react-confirm-bootstrap": "^5.3.0",
