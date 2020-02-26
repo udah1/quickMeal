@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import Menu from '../Menu/Menu.view'
 import {connect} from 'react-redux'
 import Cart from '../Cart/Cart.view.js'
-import ProductList from '../Products/ProductsList.view.js'
 
 class Main extends Component {
     constructor(props) {
@@ -15,7 +14,6 @@ class Main extends Component {
             <div>
                 <p /><p /><p /><p /><p /><p />
                 <Menu foods={this.foods}/>
-                <ProductList/>
                 <Cart/>
             </div>
         );

@@ -44,7 +44,10 @@ class AddToCartModal extends Component {
                     </div>
                 </ModalBody>
                 <ModalFooter>
-                    <Button color="primary" onClick={() => addToCart(item)}>Do Something</Button>{'  '}
+                    <Button color="primary" onClick={() => {
+                        addToCart(item);
+                        close();
+                    }}>Do Something</Button>{'  '}
                     <Button color="secondary" onClick={close}>Cancel</Button>
                 </ModalFooter>
             </Modal>
