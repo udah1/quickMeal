@@ -42,10 +42,12 @@ class Menu extends Component {
                                     <tbody>
                                     {foodItems.map((food, j) => (
                                         <tr key={"tr-" + j + "-" + i}>
-                                            <td>{`${food.price}`}</td>
+                                            <td className="prices">{`${food.price}`}</td>
                                             <td>{`${food.name} - ${food.description}`}</td>
-                                            <td>
-
+                                            {food.image && <td className="">
+                                                <img src={food.image} alt="" className="itemImg" />
+                                            </td>}
+                                            <td className="add-button">
                                                 <MuiThemeProvider theme={redTheme}>
                                                     <Tooltip title="הוסף להזמנה">
                                                         <Button color="primary" className={classes.button} onClick={() => this.toggleModal(food)}>

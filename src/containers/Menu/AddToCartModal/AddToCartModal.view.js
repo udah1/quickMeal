@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import {PropTypes} from 'prop-types'
 import {connect} from 'react-redux'
 import {Modal, ModalBody, ModalFooter, ModalHeader} from 'reactstrap';
 import {Button, Checkbox, FormControlLabel} from "@material-ui/core";
@@ -16,19 +17,19 @@ class AddToCartModal extends Component {
     render() {
         const {item, close, addToCart} = this.props;
         return item ? (
-            <Modal isOpen={true} toggle={close}>
+            <Modal isOpen={true} toggle={close} centered={true}>
                 <ModalHeader>{item.name}</ModalHeader>
                 <ModalBody>
                     <div className="container">
-                        <div className="room-list">
-                            <h6 className="text-center">{item.description}</h6>
-                            <ul className="nav nav-pills">
+                        <div>
+                            <h6>{item.description}</h6>
+                            <ul>
                                 {item.ingredients && item.ingredients.map((ingredient, key) => (
-                                    <li className="nav-item room-number" key={"ingredient_" + key}>
+                                    <li key={"ingredient_" + key}>
 
                                         <FormControlLabel
                                             control={
-                                                <Checkbox className="nav-link active" title={ingredient.name}
+                                                <Checkbox title={ingredient.name}
                                                           name={ingredient.name}
                                                           onClick={(event) => {
                                                               console.log(item.name)
@@ -65,4 +66,7 @@ function mapStateToProps(state, props) {
     return {}
 }
 
+Modal.propTypes = {
+    centered: PropTypes.bool
+}
 export default connect(mapStateToProps, mapDispatchToProps)(AddToCartModal)
