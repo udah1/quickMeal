@@ -7,6 +7,7 @@
         "name": "כנפיים",
         "position": 1,
         "description": "6 יחידות כנפיים ברוטב צ'ילי",
+        "image": "https://i1.wp.com/sirpele.blog/wp-content/uploads/2017/09/nim8402.jpg",
         "ingredients": [
           {
             "name": "כנפיים"
@@ -29,6 +30,7 @@
         "name": "סיגר פטה כבד עוף",
         "position": 3,
         "description": "עלי סיגר ממולא בכבד עוף טרי קצוץ",
+        "image": "https://besttv232-ynet-images1-prod.cdn.it.best-tv.com/PicServer4/2014/08/14/5524696/55244440530100490606no.jpg",
         "ingredients": [
           {
             "name": "עלי סיגר ממולא בכבד עוף"
@@ -47,6 +49,7 @@
         "name": "סלט חזה עוף",
         "position": 2,
         "description": "נתחי חזה עוף טרי בליווי מגוון ירקות העונה",
+        "image": "https://st1.foodsd.co.il/Images/Recipes/xxl/Recipe-7423-SwUHCbYnzImz6jUY.jpg",
         "ingredients": [
           {
             "name": "נתחי חזה עוף",
@@ -82,6 +85,7 @@
         "name": "מיקס יקיטורי",
         "position": 1,
         "description": "שיפודוני עץ פרגית, קבב הבית, פילה בקר, אנטריקוט ומולארד",
+        "image": "https://ashkelonmenu.co.il/media/1368/79.jpg",
         "ingredients": [
           {
             "name": "פרגית",
@@ -110,12 +114,14 @@
         "name": "מניפת אנטריקוט",
         "position": 2,
         "description": "פרוסות דקות של אנטריקוט עסיסי (מומלץ)",
+        "image": "https://misadot.rol.co.il/images/sites/w22/meals/4.gif",
         "price": 110
       },
       {
         "name": "המבורגר אנטריקוט 250 גרם",
         "position": 1,
-        "description": "(אפשרות לתוספת מדליון כבד אווז 35 ש\"ח / ביצת עין 12 ש\"ח / פורטובלו 10 ש\"ח / מניפה 22 ש\"ח)",
+        "description": "המבורגר אנטריקוט 250 - מוגש עם צ'יפס - (אפשרות לתוספת מדליון כבד אווז 35 ש\"ח / ביצת עין 12 ש\"ח / פורטובלו 10 ש\"ח / מניפה 22 ש\"ח)",
+        "image": "https://www.hapassage.com/wp-content/uploads/2019/02/%D7%94%D7%9E%D7%91%D7%95%D7%A8%D7%92%D7%A82.jpg",
         "ingredients": [
           {
             "name": "לחמנייה"
@@ -133,6 +139,10 @@
           },
           {
             "name": "חסה",
+            "optional": true
+          },
+          {
+            "name": "צ'יפס",
             "optional": true
           }
         ],
