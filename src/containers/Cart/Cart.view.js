@@ -22,7 +22,27 @@ class Cart extends Component {
                              )}
                             </span>
                         </ul>
-                        total : {totalPrice}
+                    </div>
+
+                    <div className="subtotal cf">
+                        <ul>
+                            <div className="totalRow final">
+                                <span className="value">&#8362; {totalPrice}</span>
+                                <span className="label">סה"כ</span>
+                            </div>
+
+                            <div className="totalRow final">
+                                <span className="value">&#8362; {totalPrice}</span>
+                                <span className="label">משלוח</span>
+                            </div>
+
+                            <div className="totalRow final">
+                                <span className="value">&#8362; {totalPrice}</span>
+                                <span className="label">סה"כ לתשלום</span>
+                            </div>
+                            <div className="totalRow">
+                                <a href="#" className="btn continue">המשך לתשלום</a></div>
+                        </ul>
                     </div>
                 </div>
             </div>
