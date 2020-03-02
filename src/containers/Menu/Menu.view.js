@@ -38,34 +38,31 @@ class Menu extends Component {
                         return (
                             <div className="menu-category" key={"category-" + i}>
                                 <h2>{category.name}</h2>
-                                <table id="game" className="menu-grid" cellPadding="0" cellSpacing="0">
-                                    <tbody>
-                                    {foodItems.map((food, j) => (
-                                        <tr key={"tr-" + j + "-" + i}>
-                                            <td className="prices">{`${food.price}`}</td>
-                                            <td>{`${food.name} - ${food.description}`}</td>
-                                            {food.image && <td className="">
-                                                <img src={food.image} alt="" className="itemImg" />
-                                            </td>}
-                                            <td className="add-button">
-                                                <MuiThemeProvider theme={redTheme}>
-                                                    <Tooltip title="הוסף להזמנה">
-                                                        <Button color="primary" className={classes.button} onClick={() => this.toggleModal(food)}>
-                                                            <AddCircleOutline />
-                                                        </Button>
-                                                    </Tooltip>
-                                                </MuiThemeProvider>
-                                            </td>
-                                        </ tr>
-                                    ))}
-                                    </tbody>
-                                </table>
+
+                                {foodItems.map((food, j) => (
+                                    <div className="menu-grid row justify-content-center" key={"row" + j}>
+                                        <div className="col-lg-1">
+                                            <MuiThemeProvider theme={redTheme}>
+                                                <Tooltip title="הוסף להזמנה">
+                                                    <Button color="primary" className={classes.button} onClick={() => this.toggleModal(food)}>
+                                                        <AddCircleOutline />
+                                                    </Button>
+                                                </Tooltip>
+                                            </MuiThemeProvider>
+                                        </div>
+                                        {food.image && <div className="col-lg-1">
+                                            <img src={food.image} alt="" className="itemImg" />
+                                        </div>}
+                                        <div className="right col-lg-4">{`${food.name} - ${food.description}`}</div>
+                                        <div className="col-lg-1">{`${food.price}`}</div>
+                                    </ div>
+                                ))}
                             </div>
                         )
                     })}
                     <p />
                 </div>
-                {this.state.showModal && <AddToCartModal close={this.toggleModal} item={this.state.itemToShow}/>}
+                {this.state.showModal && <AddToCartModal close={this.toggleModal} item={this.state.itemToShow} />}
             </div>
         )
     }
@@ -96,12 +93,6 @@ const redTheme = createMuiTheme({
     palette: {
         primary: red
     },
-    typography: {
-        useNextVariants: true
-    }
-});
-
-const blueTheme = createMuiTheme({
     typography: {
         useNextVariants: true
     }

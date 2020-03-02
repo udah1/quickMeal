@@ -12,7 +12,7 @@ class Cart extends Component {
                 <div className="wrap cf">
                     <div className="heading cf">
                         <h1>ההזמנה שלי</h1>
-                        <a href="#" className="continue">חזרה לתפריט</a>
+                        <a href="/#" className="continue">חזרה לתפריט</a>
                     </div>
                     <div className="cart">
                         <ul className="cartWrap">
@@ -41,7 +41,7 @@ class Cart extends Component {
                                 <span className="label">סה"כ לתשלום</span>
                             </div>
                             <div className="totalRow">
-                                <a href="#" className="btn continue">המשך לתשלום</a></div>
+                                <a href="/#" className="btn continue">המשך לתשלום</a></div>
                         </ul>
                     </div>
                 </div>

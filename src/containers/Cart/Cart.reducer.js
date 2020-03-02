@@ -1,10 +1,8 @@
-import {
-    ADD_ITEM_TO_CART,
-    REMOVE_ITEM_FROM_CART
-} from './Cart.actions';
+import {ADD_ITEM_TO_CART, REMOVE_ITEM_FROM_CART} from './Cart.actions';
 
 const initial_state = {
-    items: []
+    items: [],
+    totalPrice: 0
 }
 
 const updateCart = (items) => {
